@@ -1,0 +1,947 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* farver: #FEFFFE, #E5FCF5, #B3DEC1, #210124, #750D37 */
+
+.max-width{
+    max-width: 1700px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 13px 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #210124;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 13px 0;
+    background: #210124;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #FEFFFE;
+    font-size: 37px;
+    font-weight: 800;
+}
+.navbar .logo-img img{
+    width: 223px;
+    height: 105px;
+    margin-left: 20px;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #FEFFFE;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #750D37;
+}
+
+/* menu btn styling */
+.menu-btn{
+    color: #FEFFFE;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+/* forside styling */
+
+.forside{
+    display: flex;
+    background-color: #B3DEC1;
+    height: 100vh;
+    color: #FEFFFE;
+    min-height: 500px;
+    font-family: 'Open Sans', sans-serif;
+}
+.forside .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.forside .forside-content .text-1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.forside .forside-content .text-2{
+    font-size: 75px;
+    font-weight: 700;
+    margin-left: -3px;
+}
+.forside .forside-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    font-weight: 600;
+}
+.forside .forside-content .text-3 span{
+    color: #750D37;
+}
+
+iframe{
+    margin-left: 20px;
+    margin-top: 220px;
+    margin-right: 20px;
+    align-items: center;
+    height: 50vh;
+    width: 50%;
+}
+
+.quote_forside{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.forside-banner{
+    background-image: url(banner_farve.png); 
+    height: 25vh;
+    width: 100%;
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+/* forside part 2 styling */
+
+.forside-2{
+    display: flex;
+    background-color: #e5fcf5;
+    height: 45vh;
+    min-height: 350px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.forside-2 .billede1{
+    margin-left: 20px;
+    border-radius: 6px;
+}
+
+.forside-2 .billede2{
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+.forside-2 .billede3{
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+
+/* forside part 3 styling */
+.forside-3{
+    display: flex;
+    height: 80px;
+    font-family: 'Open Sans', sans-serif;
+    background: #B3DEC1;
+    align-items: center;
+    justify-content: center;
+    color: #210124;
+}
+
+.forside-3 .quote_forside3{
+    font-weight: 800;
+    font-size: 25px;
+}
+/* footer sektion styling */
+
+.footers{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    background: #210124;
+    padding: 25px 23px;
+    color: #FEFFFE;
+    height: 80px;
+    align-items: center;
+}
+
+footer span{
+    color: #750D37;
+}
+
+.footers a{
+    font-size: 40px;
+    color: #FEFFFE;
+    transition: color 0.3s ease;
+}
+.footers a:hover{
+    color: #750D37;
+}
+
+/* om mig section styling */
+
+.om-mig{
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    min-height: 500px;
+    background: #B3DEC1;
+}
+
+.om-mig .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.om-mig .title{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    padding-top: 160px;
+    color: #210124;
+}
+
+.om-mig .subtitle{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #210124;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.om-mig .subtitle::before{
+    content: "";
+    bottom: 80vh;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #210124;
+}
+
+.om-mig .subtitle::after{
+    content: "Hvem er jeg";
+    bottom: 80vh;
+    left: 50%;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FEFFFE;
+    padding: 0px 7px;
+    background: #B3DEC1;
+}
+
+.om-mig .about-content .left img{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.om-mig .about-content .right{
+    width: 55%;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #210124; 
+}
+
+.om-mig .about-content .right a{
+    display: inline-block;
+    background: #210124;
+    color: #FEFFFE;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+}
+
+.om-mig .about-content .right a:hover{
+    color: #210124;
+    background: #FEFFFE;
+}
+
+.ommig-banner{
+    background-image: url(banner_farve2.png); 
+    height: 25vh;
+    width: 100%;
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+/* skills section styling */
+.skills{
+    background: #e5fcf5;
+    color: #210124;
+}
+
+.skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills-content .left .text-skills{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.skills-content p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.skills-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills-content .right span{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: #750D37;
+}
+
+.skills-content .right .css::before{
+    width: 70%;
+}
+
+.skills-content .right .js::before{
+    width: 10%;
+}
+
+/* projekter styling */
+
+.projekter{
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    min-height: 500px;
+    background: #B3DEC1;
+}
+
+.title-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.title{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    padding-top: 160px;
+    color: #210124;
+}
+
+.subtitle2{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #FEFFFE;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #210124;
+}
+
+.projekter-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.description-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 17px;
+    text-align: center;
+}
+
+.flow-1-description, .flow-2-description, .flow-3-description, .flow-4-description{
+    width: 330px;
+    color: #210124
+}
+
+.flow-1, .flow-2, .flow-3, .flow-4{
+    height: 400px;
+    width: 350px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.flow-1{
+    background-image: url(flow_1_billede.png);
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.flow-2{
+    background-image: url(flow_2_billede.png);
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.flow-3{
+    background-image: url(flow_3_billede.png);
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.flow-4{
+    background-image: url(flow_4_billede.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.flow-1:hover{
+    opacity: 50%;
+}
+
+.flow-2:hover{
+    opacity: 50%;
+}
+
+.flow-3:hover{
+    opacity: 50%;
+}
+
+.flow-4:hover{
+    opacity: 50%;
+}
+
+.portfolio-link{
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* kontakt side styling */
+
+.kontakt-side{
+    font-family: 'Open Sans', sans-serif;
+    height: 125vh; 
+    min-height: 500px;
+    background: #B3DEC1;
+}
+
+.max-width-contact{
+    max-width: 1000px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.kontakt-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.email-title1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    color: #210124;
+}
+
+.email-title2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    color: #210124;
+}
+
+.email1{
+    color: #FEFFFE;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #210124;
+}
+
+.email2{
+    color: #FEFFFE;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #210124;
+}
+
+input[type=names], select, textarea {
+    width: 845px; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  input[type=submit] {
+    background-color: #210124;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .kontakt {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .kontakt-banner{
+    background-image: url(banner_mig.png); 
+    height: 35vh;
+    width: 100%;
+    border: 2px solid black;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 900px;
+  }
+/* responsiv media query */
+
+@media (max-width: 1635px){
+    .kontakt-banner{
+        background-position-y: 820px;
+      }
+
+
+@media (max-width: 1577px){
+.description-content{
+    font-size: 17px;
+}
+
+.flow-1-description, .flow-2-description, .flow-3-description, .flow-4-description{
+    width: 270px;
+}
+
+.flow-1, .flow-2, .flow-3, .flow-4{
+    height: 350px;
+    width: 300px;
+}
+.kontakt-banner{
+    background-position-y: 790px;
+  }
+}
+@media (max-width: 1361px){
+    .om-mig .title{
+    font-size: 35px;
+    }
+ 
+    .om-mig .subtitle::after{
+        font-size: 20px;
+    }
+
+    .om-mig .about-content .right{
+        font-size: 18px;
+    }
+
+    .om-mig .about-content .right a{
+        font-size: 18px;
+    }
+
+    .skills-content .left .text-skills{
+        font-size: 19px;
+    }
+    
+    .skills-content p{
+        font-size: 16px;
+    }
+    .description-content{
+        font-size: 17px;
+    }
+    
+    .flow-1-description, .flow-2-description, .flow-3-description, .flow-4-description{
+        width: 240px;
+    }
+    
+    .flow-1, .flow-2, .flow-3, .flow-4{
+        height: 320px;
+        width: 270px;
+    }
+
+    .kontakt {
+       width: 765px;
+       padding: 15px;
+      }
+
+    input[type=names], select, textarea {
+        width: 725px;
+        padding: 10px;
+        margin-bottom: 12px;
+    }
+    .kontakt-banner{
+        background-position-y: 710px;
+      }
+
+}
+@media (max-width: 1265px){
+.kontakt-banner{
+    background-position-y: 650px;
+    height: 30vh;
+  }
+}
+@media (max-width: 1241px){
+    .description-content{
+        font-size: 17px;
+    }
+    
+    .flow-1-description, .flow-2-description, .flow-3-description, .flow-4-description{
+        width: 210px;
+    }
+    
+    .flow-1, .flow-2, .flow-3, .flow-4{
+        height: 290px;
+        width: 240px;
+    }
+}
+@media (max-width: 1161px){
+    .kontakt-banner{
+        background-position-y: 570px;
+      }
+    }
+@media (max-width: 1138px){
+    .navbar .logo a{
+        font-size: 28px;
+    }
+    .navbar .logo-img img{
+        width: 186px;
+        height: 94px;
+        margin-left: 20px;
+    }
+    .navbar .menu li a{
+        font-size: 17px;
+        margin-left: 25px;
+    }
+    .forside .forside-content .text-1{
+        font-size: 44px;
+    }
+    .forside .forside-content .text-2{
+        font-size: 62px;
+        margin-left: -3px;
+    }
+    .forside .forside-content .text-3{
+        font-size: 37px;
+        margin: 5px 0;
+    }
+    .om-mig .title{
+        font-size: 30px;
+        }
+     
+    .om-mig .subtitle::after{
+            font-size: 16px;
+        }
+    
+    .om-mig .about-content .right{
+            font-size: 15px;
+        }
+    
+    .om-mig .about-content .right a{
+            font-size: 15px;
+        }
+    .om-mig .about-content .left img{
+        height: 400px;
+        width: 300px;
+    }
+    .skills-content .left .text-skills{
+        font-size: 16px;
+    }
+    
+    .skills-content p{
+        font-size: 14px;
+    }
+    .description-content{
+        font-size: 17px;
+    }
+    
+    .flow-1-description, .flow-2-description, .flow-3-description, .flow-4-description{
+        width: 180px;
+    }
+    
+    .flow-1, .flow-2, .flow-3, .flow-4{
+        height: 260px;
+        width: 210px;
+    }
+    .kontakt {
+        width: 725px;
+        padding: 12px;
+       }
+ 
+     input[type=names], select, textarea {
+         width: 685px;
+         padding: 8px;
+         margin-bottom: 8px;
+     }
+    .kontakt-side{
+        height: 135vh;
+    }
+}
+@media (max-width: 1025px){
+.kontakt-banner{
+    background-position-y: 470px;
+  }
+}
+@media (max-width: 1001px){
+    .description-content{
+        font-size: 17px;
+    }
+    
+    .flow-1-description, .flow-2-description, .flow-3-description, .flow-4-description{
+        width: 150px;
+    }
+    
+    .flow-1, .flow-2, .flow-3, .flow-4{
+        height: 230px;
+        width: 180px;
+    }
+}
+@media (max-width: 965px){
+    .navbar .logo a{
+        font-size: 22px;
+    }
+    .navbar .logo-img img{
+        width: 168px;
+        height: 78px;
+        margin-left: 20px;
+    }
+    .navbar .menu li a{
+        font-size: 15px;
+        margin-left: 25px;
+    }
+    .forside .forside-content .text-1{
+        font-size: 37px;
+    }
+    .forside .forside-content .text-2{
+        font-size: 53px;
+        margin-left: -3px;
+    }
+    .forside .forside-content .text-3{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+
+    .forside-3 .quote_forside3{
+        font-size: 20px;
+    }
+
+    .om-mig{
+        height: 85vh;
+    }
+
+    .om-mig .title{
+        font-size: 27px;
+        }
+     
+    .om-mig .subtitle::after{
+            font-size: 14px;
+        }
+   
+    .om-mig .about-content .right{
+            font-size: 11px;
+        }
+    
+    .om-mig .about-content .right a{
+            font-size: 11px;
+        }
+    .om-mig .about-content .left img{
+        height: 400px;
+        width: 300px;
+    }
+    .skills-content .left .text-skills{
+        font-size: 14px;
+    }
+    
+    .skills-content p{
+        font-size: 12px;
+    }
+    .kontakt {
+        width: 685px;
+       }
+ 
+     input[type=names], select, textarea {
+         width: 645px;
+     }
+}
+@media (max-width: 881px){
+    .navbar .logo a{
+        font-size: 20px;
+    }
+    .navbar .logo-img img{
+        width: 125px;
+        height: 63px;
+        margin-left: 20px;
+    }
+    .navbar .menu li a{
+        font-size: 12px;
+        margin-left: 25px;
+    }
+    .forside .forside-content .text-1{
+        font-size: 28px;
+    }
+    .forside .forside-content .text-2{
+        font-size: 40px;
+        margin-left: -3px;
+    }
+    .forside .forside-content .text-3{
+        font-size: 24px;
+        margin: 5px 0;
+    }
+    .om-mig .about-content .right{
+        font-size: 11px;
+    }
+
+    .om-mig .about-content .right a{
+        font-size: 11px;
+    }
+    .om-mig .about-content .left img{
+    height: 350px;
+    width: 250px;
+}
+.description-content{
+    font-size: 15px;
+}
+
+.flow-1-description, .flow-2-description, .flow-3-description, .flow-4-description{
+    width: 120px;
+}
+
+.flow-1, .flow-2, .flow-3, .flow-4{
+    height: 200px;
+    width: 150px;
+}
+}
+@media (max-width: 761px){
+    .om-mig .about-content .left img{
+        height: 300px;
+        width: 200px;
+    }
+    .om-mig .about-content .right{
+        font-size: 10px;
+    }
+
+    .om-mig .about-content .right a{
+        font-size: 10px;
+    }
+    .skills-content .left .text-skills{
+        font-size: 12px;
+    }
+    
+    .skills-content p{
+        font-size: 10px;
+    }
+    .description-content{
+        font-size: 15px;
+    }
+    
+    .flow-1-description, .flow-2-description, .flow-3-description, .flow-4-description{
+        width: 90px;
+    }
+    
+    .flow-1, .flow-2, .flow-3, .flow-4{
+        height: 150px;
+        width: 120px;
+    }
+    .kontakt {
+        width: 695px;
+        padding: 10px;
+       }
+ 
+     input[type=names], select, textarea {
+         width: 655px;
+         padding: 7px;
+         margin-bottom: 7px;
+     }
+}
+
+@media (max-width: 641px){
+    .om-mig .about-content .left img{
+        height: 250px;
+        width: 150px;
+    }
+    .om-mig .about-content .right{
+        font-size: 9px;
+    }
+
+    .om-mig .about-content .right a{
+        font-size: 9px;
+    }
+    .description-content{
+        font-size: 8px;
+    }
+    
+    .flow-1-description, .flow-2-description, .flow-3-description, .flow-4-description{
+        width: 50px;
+    }
+    
+    .flow-1, .flow-2, .flow-3, .flow-4{
+        height: 130px;
+        width: 80px;
+    }
+}
+}

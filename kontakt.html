@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frederiks portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="index.html">Frederik Braad</a></div>
+            <div class="logo-img"><img src="FHB_logo_v1.png" alt="FHB_logo"></div>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="om-mig.html">Om mig</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="kontakt-side">
+        <div class="max-width-contact">
+            <div class="kontakt-container">
+                    <div class="title-content">
+                    <div class="title">Er du interesseret i at kontakte mig?</div>
+                    <div class="email-title1">Min skole email:</div>
+                    <div class="email1">cph-fb103@cphbusiness.dk</div>
+                    <div class="email-title2">Min private email:</div>
+                    <div class="email2">frederik.hbraad@gmail.com</div>
+                    </div>
+                <div class="kontakt">
+                        <form action="action_page.php">
+                
+                        <label for="fname">First Name</label>
+                        <input type="names" id="fname" name="firstname" placeholder="Your first...">
+                
+                        <label for="lname">Last Name</label>
+                        <input type="names" id="lname" name="lastname" placeholder="Your last name...">
+                
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="denmark">Denmark</option>
+                            <option value="sweden">Sweden</option>
+                            <option value="norway">Norway</option>
+                            <option value="germany">Germany</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write here..." style="height:200px"></textarea>
+                
+                        <input type="submit" value="Submit">
+                
+                        </form>
+                </div>    
+            </div>    
+        </div>
+    </div>
+
+
+    <div class="kontakt-banner"></div>
+
+    <footer>
+        <div class="footers">
+            <p>Lavet af <span>Frederik Holm Braad</span></p>
+            <a href="https://github.com/frederikbraad/fhb97"><i class="fab fa-github"></i></a>
+            <p><i class="far fa-copyright"></i>2020 All rights reserved.</p>
+        </div>
+    </footer>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
